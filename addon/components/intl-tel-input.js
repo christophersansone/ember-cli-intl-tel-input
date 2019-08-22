@@ -413,6 +413,7 @@ export default TextField.extend({
 
     // let Ember be aware of the changes
     input.addEventListener('change', notifyPropertyChange);
+    input.addEventListener('countrychange', notifyPropertyChange);
 
     let itl = intlTelInput(input, {
       allowDropdown: this.get('allowDropdown'),
